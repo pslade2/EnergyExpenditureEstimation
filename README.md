@@ -1,9 +1,6 @@
 # EnergyExpenditureEstimation
+[![Build Status](https://travis-ci.com/pslade2/EnergyExpenditureEstimation.svg?token=4VLDzfdsFLSp6zXCt5rM&branch=master)](https://travis-ci.com/pslade2/EnergyExpenditureEstimation)
 This is the repository for the "Rapid energy expenditure estimation for assisted and inclined loaded walking" research paper. Please cite this paper if you use a portion of our project. In this work we trained models using input features of muscle activity (EMG) and ground reaction forces to estimate energy expenditure during walking (1) with an ankle exoskeleton and (2) during various loaded and inclined walking conditions. These estimates were made every single gait cycle. We measure the performance of these models for cases where conditions or subjects data are not included in the training data to simulate real use cases. For research or clinical experiments where the accuracy of our models is sufficient these can be used to replace the standard indirect calormitery methods of estimating energy expenditure which require expensive equipment and provide slow, noisy measurements. This repository contains the relevant formatted datasets, code to train models, and final model parameters to recreate our reported results. This code base should offer a support to apply our techniques to new datasets or utilize our fully trained models.
-
-SOFTWARE: 
-
-The files were written in Python 3 and require the following packages and dependencies: numpy, scipy, matplotlib, ipython & ipython-notebook (all 5 available at: https://www.scipy.org/install.html), scikit-learn (http://scikit-learn.org/stable/install.html), and tensorflow (https://www.tensorflow.org/install/). Please refer to Jupyter on how to install Jupyter notebooks (http://jupyter.org/install) for Python 3 in order to view open and run the given iPython notebooks.
 
 CODE:
 
@@ -12,6 +9,10 @@ Linear Regression - The linear regression code is contained in LR.ipynb. This fi
 Neural Networks - The low-level implementation of the fully connected neural network model is in the "NNModel.py" file. The interactive neural network code for training, developement, and testing is contained in main.ipynb. The code in the file "main.py" is identical to "main.ipynb" but can be run without jupyter notebooks (see file for instructions). These files can be used to train a single model for development, perform a hyperparameter sweep to determine the best neural network paramters, or average performance over all subjects by changing the "sim_type" variable to "sm", "hps", or "subj", respectively. The specifications for any of these different use cases is defined in the ".json" files in the settings folder. The network parameters for the trained networks reported in our results are already given in the .json files that end with "subj". These can be run to reproduce our results. An additional .json file example for the single model (ending with "sm") and hyperparameter search (ending with "hps") has been added as an example. The low-level tensorflow code for the hyperparameter sweeping is in the "paramSearchHelper.py" file. Some additional tensorflow code for saving models used throughout the other scripts is saved in the "utils.py" file. 
 
 Supporting files - Both programs rely on the "dataHelp.py" file which contains miscellaneous functions for segmenting the data for the different tests, normalization code, binning the input singals appropriately, and others. 
+
+SOFTWARE: 
+
+The files were written in Python 3 and require the following packages and dependencies: numpy, scipy, matplotlib, ipython & ipython-notebook (all 5 available at: https://www.scipy.org/install.html), scikit-learn (http://scikit-learn.org/stable/install.html), and tensorflow (https://www.tensorflow.org/install/). Please refer to Jupyter on how to install Jupyter notebooks (http://jupyter.org/install) for Python 3 in order to view open and run the given iPython notebooks.
 
 DATA: 
 

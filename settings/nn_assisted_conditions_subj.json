@@ -2,7 +2,7 @@
     "model_type": "NN",
     "sim_type": "subj",
     "batch_size": 1,
-    "num_epochs": 30000,
+    "num_epochs": 20000,
     "data_type": "conditions",
     "data_folder": "assisted_conditions_30bins",
     "sequence_length": 30,

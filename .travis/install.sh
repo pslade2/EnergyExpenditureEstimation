@@ -1,16 +1,6 @@
 #!/bin/bash
 
-# matplot lib install
-#python -mpip install -U pip
-#python -mpip install -U matplotlib
-
-# scipy install
-#python -m pip install --upgrade pip
-#pip install --upgrade pip setuptools wheel
-#sudo apt-get build-dep python-scipy
-#sudo apt-get install -qq python-scipy
-#pip install scipy
-
+# numpy, scipy, matplotlib install
 python -m pip install numpy scipy matplotlib
 
 # scikit-learn install
