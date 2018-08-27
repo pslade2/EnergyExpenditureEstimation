@@ -11,7 +11,7 @@
 #sudo apt-get install -qq python-scipy
 #pip install scipy
 
-python -m pip install --user numpy scipy matplotlib
+python -m pip install numpy scipy matplotlib
 
 # scikit-learn install
 pip install -U scikit-learn
