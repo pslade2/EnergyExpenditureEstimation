@@ -1,5 +1,6 @@
 # EnergyExpenditureEstimation
 [![Build Status](https://travis-ci.com/pslade2/EnergyExpenditureEstimation.svg?token=4VLDzfdsFLSp6zXCt5rM&branch=master)](https://travis-ci.com/pslade2/EnergyExpenditureEstimation)
+
 This is the repository for the "Rapid energy expenditure estimation for assisted and inclined loaded walking" research paper. Please cite this paper if you use a portion of our project. In this work we trained models using input features of muscle activity (EMG) and ground reaction forces to estimate energy expenditure during walking (1) with an ankle exoskeleton and (2) during various loaded and inclined walking conditions. These estimates were made every single gait cycle. We measure the performance of these models for cases where conditions or subjects data are not included in the training data to simulate real use cases. For research or clinical experiments where the accuracy of our models is sufficient these can be used to replace the standard indirect calormitery methods of estimating energy expenditure which require expensive equipment and provide slow, noisy measurements. This repository contains the relevant formatted datasets, code to train models, and final model parameters to recreate our reported results. This code base should offer a support to apply our techniques to new datasets or utilize our fully trained models.
 
 CODE:
