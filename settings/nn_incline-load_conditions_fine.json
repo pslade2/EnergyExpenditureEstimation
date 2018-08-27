@@ -4,7 +4,7 @@
     "batch_size": 1,
     "num_epochs": 5000,
     "data_type": "conditions",
-    "data_folder": "filt_norm_conditions_30bins",
+    "data_folder": "incline-load_conditions_30bins",
     "sequence_length": 30,
 
     "train_size": 0.8,

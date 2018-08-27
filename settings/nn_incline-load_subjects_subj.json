@@ -3,8 +3,8 @@
     "sim_type": "subj",
     "batch_size": 1,
     "num_epochs": 12500,
-    "data_type": "subjcond2",
-    "data_folder": "incline-load_conditions_30bins",
+    "data_type": "subjects",
+    "data_folder": "incline-load_subjects_30bins",
     "sequence_length": 30,
 
     "train_size": 0.8,

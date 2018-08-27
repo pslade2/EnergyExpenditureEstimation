@@ -117,6 +117,7 @@ def confusionMat(pred_list, actual_list, center, path, filename, saving=True):
         for j in range(size): # loop through conditions
             mat[pred[j],actual[j]] += 1
     mat = mat / size # normalizing
+    #print(np.diag(mat))
     plt.matshow(mat)
     plt.xlabel('Predicted Order')
     plt.ylabel('Conditions Ordered by Metabolic Effort')

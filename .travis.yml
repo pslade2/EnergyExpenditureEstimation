@@ -1,0 +1,9 @@
+sudo: required
+dist: trusty
+language: python
+python:
+  - "3.5"
+install:
+  - "./.travis/install.sh"
+script: python main.py test
+#  - "./.travis/run.sh"
